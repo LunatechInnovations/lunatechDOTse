@@ -29,7 +29,8 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script type="text/javascript" src="js/wow.js"></script>
 <script type="text/javascript" src="js/classie.js"></script>
-<script src="contactform/contactform.js"></script>
+<script src="https://smtpjs.com/smtp.js"></script>
+<!--<script src="contactform/contactform.js"></script>--!>
 
 <!-- =======================================================
     Theme Name: Knight
@@ -233,25 +234,25 @@
                 	
                     <div id="sendmessage">Ditt meddelande är skickat.</div>
                     <div id="errormessage"></div>
-                    <form action="" method="post" role="form" class="contactForm">
+                    <form action="sendinfomail.php" method="post" role="form" class="contactForm">
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control input-text" id="name" placeholder="Ditt namn" data-rule="minlen:4" data-msg="Vänligen mata in minst 4 tecken." disabled />
+                            <input type="text" name="name" class="form-control input-text" id="name" placeholder="Ditt namn" data-rule="minlen:4" data-msg="Vänligen mata in minst 4 tecken." />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control input-text" name="email" id="email" placeholder="Din e-post" data-rule="email" data-msg="Vänligen mata in en giltlig e-post adress." disabled />
+                            <input type="email" class="form-control input-text" name="email" id="email" placeholder="Din e-post" data-rule="email" data-msg="Vänligen mata in en giltlig e-post adress." />
                             <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Ämne" data-rule="minlen:4" data-msg="Vänligen mata in minst 8 tecken." disabled />
+                            <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Ämne" data-rule="minlen:4" data-msg="Vänligen mata in minst 8 tecken."/>
                             <div class="validation"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Skriv någonting..." placeholder="Meddelande" disabled></textarea>
+                            <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Skriv någonting..." placeholder="Meddelande"></textarea>
                             <div class="validation"></div>
                         </div>
                         
-                        <div class="text-center"><button type="submit" class="input-btn" disabled>Skicka meddelande</button></div>
+                        <div class="text-center"><button type="submit" class="input-btn">Skicka meddelande</button></div>
                     </form>
                 </div>	
             </div>
@@ -274,6 +275,11 @@
     </div>
 </footer>
 
+	<script type="text/javascript">
+		function sendInfoMail() {
+			console.log("test");
+		}
+	</script>
 
 <script type="text/javascript">
     $(document).ready(function(e) {
