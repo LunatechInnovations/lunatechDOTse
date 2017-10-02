@@ -379,6 +379,14 @@ img {
    max-width:100%;
 }
 
+/* Portfolio item page */
+#portfolioCarousel {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+ 
 /* no transition on .isotope container */
 
 .isotope .isotope-item {
