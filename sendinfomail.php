@@ -7,8 +7,15 @@
 		'Reply-To: ' . $from . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 
-	mail($to, $subject, $message, $headers);
+	if(mail($to, $subject, $message, $headers))
+	{
+		header("Location: http://www.lunatech.se/?sendmail=1#contact");
+	}
+	else
+	{
+		header("Location: http://www.lunatech.se/?sendmail=2#contact");
+	}
+		
 
-	header("Location: http://www.lunatech.se/#contact");
 	die();
 ?>
