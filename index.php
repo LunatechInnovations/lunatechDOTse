@@ -154,12 +154,12 @@
         </div>
         <div class="portfolioContainer wow fadeInUp delay-04s">
             <div class="Portfolio-box productdev">
-                <a href="#"><img src="img/portfolio_amohd.jpg" alt="Portfölj"></a>
+                <a href="/portfolio_amohd.html"><img src="img/portfolio_amohd.jpg" alt="Hängdon"></a>
                 <h3>Hängdon</h3>
                 <p>Produktutveckling</p>
             </div>
             <div class=" Portfolio-box machines">
-                <a href="#"><img src="img/portfolio_embossingwheel.jpg" alt="Märkhjul"></a>
+                <a href="/portfolio_mhh.html"><img src="img/portfolio_embossingwheel.jpg" alt="Märkhjul"></a>
                 <h3>Märkhjulshållare</h3>
                 <p>Specialmaskiner</p>
             </div>
@@ -177,6 +177,11 @@
                 <a href="/portfolio_hsfm.html"><img src="img/portfolio_lapper.jpg" alt="Bandare"></a>
                 <h3>Bandare</h3>
                 <p>Specialmaskiner</p>
+            </div>
+            <div class="Portfolio-box productdev">
+                <a href="/portfolio_takeoff.html"><img src="img/portfolio_takeoff.jpg" alt="Take-off"></a>
+                <h3>Take-off</h3>
+                <p>Produktutveckling</p>
             </div>
         </div>
     </section>
